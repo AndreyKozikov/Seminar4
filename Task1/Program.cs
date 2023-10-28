@@ -33,16 +33,13 @@ long Exponentiation(int number, int degree)
 
 int a = InputNumber("Введите число А: ");
 int b = 0;
-while (b <= 1)
+while (b < 1)
 {
     b = InputNumber("Введите число B: ");
-    if (b > 0)
+    if (b < 1)
     {
-        break;
+        Console.WriteLine("Число В должно быть натуральным. Повторите ввод."); ;
     }
-    else
-    {
-        Console.WriteLine("Число В должно быть натуральным. Повторите ввод.");
-    }
+
 }
 Console.WriteLine(Exponentiation(a, b));
