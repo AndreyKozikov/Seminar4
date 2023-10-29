@@ -6,12 +6,11 @@ int InputNumber(string message)
 {
     while (true)
     {
-        int num;
         Console.Write(message);
-        string? input = Console.ReadLine();
-        if (Int32.TryParse(input, out num))
+        string input = Console.ReadLine();
+        if (Int32.TryParse(input, out int num))
         {
-            return Convert.ToInt32(input);
+            return num;
         }
         else
         {
